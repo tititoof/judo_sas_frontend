@@ -47,7 +47,8 @@ export default class Default extends Vue {
     (v: any) => /.+@.+\..+/.test(v) || 'E-mail must be valid'
   ]
 
-  emptyRules: Array<any> = [(v) => !!v || 'Name is required']
+  emptyRules: Array<any> = [(v: any) => !!v || 'Name is required']
+  $auth: any
 
   async login() {
     const _self = this

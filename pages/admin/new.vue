@@ -46,7 +46,8 @@ export default class AdminNew extends Vue {
   @postsStore.Action('sendPost') sendPost: any
   content: string = ''
   title: string = ''
-
+  $auth: any
+  
   setContent(content: string) {
     this.content = content
   }

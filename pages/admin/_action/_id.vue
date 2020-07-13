@@ -53,8 +53,9 @@ export default class AdminPost extends Vue {
   content: string = ''
   title: string = ''
   postId: string = ''
+  $auth: any
 
-  validate ({ params }) {
+  validate ({ params }: any) {
     // Doit être un nombre
     return /^\d+$/.test(params.id)
   }

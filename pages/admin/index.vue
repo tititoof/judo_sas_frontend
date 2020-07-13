@@ -43,7 +43,7 @@
 <script lang="ts">
 import { Vue, Component, namespace, Getter,Action, getModule } from 'nuxt-property-decorator'
 import PostsModule from '~/store/PostsModule'
-import DatatableHeaderType from '~/types/index.js'
+import { DatatableHeaderType } from '~/types/main.ts'
 
 const postsStore = namespace('PostsModule')
 
@@ -76,7 +76,7 @@ export default class AdminIndex extends Vue {
       })
   }
 
-  editArticle(id) {
+  editArticle(id: Number) {
     this.$router.push({
       path: `/admin/edit/${id}`
     })

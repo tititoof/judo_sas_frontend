@@ -43,9 +43,9 @@ import {
   }
 })
 export default class Editor extends Vue {
-  @PropSync('content', { type: String }) syncedContent
+  @PropSync('content', { type: String }) syncedContent: String = ""
 
-  inputText = ''
+  inputText: String = ''
 
   extensions = [
     History,
@@ -75,7 +75,7 @@ export default class Editor extends Vue {
   ]
 
   onInit () {
-    this.inputText = this.content
+    this.inputText = this.syncedContent
   }
 
   refresh () {
@@ -83,7 +83,7 @@ export default class Editor extends Vue {
   }
 
   mounted () {
-    this.inputText = this.content
+    this.inputText = this.syncedContent
   }
 }
 </script>

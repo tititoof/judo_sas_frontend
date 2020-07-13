@@ -3,16 +3,17 @@
     <div id="tree" ref="tree"></div>
   </v-container>
 </template>
-<script lang="ts">
+<script>
 import { Vue, Component } from 'nuxt-property-decorator'
-import OrgChart from '@balkangraph/orgchart.js/orgchart'
+import OrgChart from '@balkangraph/orgchart.js/orgchart.js'
 
 @Component({
   components: { OrgChart }
 })
 export default class Office extends Vue {
-  members: Array<string> = []
-  nodes: Array<object> = [
+  chart = null
+  members = []
+  nodes = [
     {
       id: 1,
       nom: 'Maingourd Patricia',
@@ -144,7 +145,7 @@ export default class Office extends Vue {
     },
   ]
 
-  oc(domEl: any, x: any) {
+  oc(domEl, x) {
     this.chart = new OrgChart(domEl, {
       template: 'derek',
       nodes: x,
