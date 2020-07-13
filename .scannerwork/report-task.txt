@@ -1,0 +1,6 @@
+projectKey=judo-sas
+serverUrl=http://192.168.1.48:8001
+serverVersion=8.3.1.34397
+dashboardUrl=http://192.168.1.48:8001/dashboard?id=judo-sas
+ceTaskId=AXKITpZEVfqzGY344Iy0
+ceTaskUrl=http://192.168.1.48:8001/api/ce/task?id=AXKITpZEVfqzGY344Iy0
