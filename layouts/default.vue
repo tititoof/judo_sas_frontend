@@ -73,7 +73,7 @@ export default class Default extends Vue {
     { name: 'Bureau', route: '/office', icon: 'mdi-human-male-child' },
     { name: 'Cours', route: '/planning', icon: 'mdi-calendar' },
     { name: 'Dojo', route: '/dojo', icon: 'mdi-map-marker' },
-    { name: 'Contact', route: '/', icon: 'mdi-email' }
+    { name: 'Contact', route: '/contact', icon: 'mdi-email' }
   ]
 
   internalArticleLinks: Array<IInternalLink> = [

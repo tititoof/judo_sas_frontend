@@ -19,11 +19,13 @@
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/recaptcha": "^0.6.2",
     "leaflet": "^1.6.0",
     "nuxt": "^2.0.0",
     "nuxt-leaflet": "^0.0.21",
     "nuxt-mq": "^2.0.1",
     "tiptap-vuetify": "^2.23.0",
+    "vue-recaptcha-v3": "^1.9.0",
     "vue2-leaflet": "^2.5.2"
   },
   "devDependencies": {

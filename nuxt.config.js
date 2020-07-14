@@ -50,7 +50,8 @@ export default {
     // Leaflet
     'nuxt-leaflet',
     // Vue mq
-    ['nuxt-mq']
+    ['nuxt-mq'],
+    '@nuxtjs/recaptcha'
   ],
   /*
    ** Axios module configuration
@@ -139,6 +140,13 @@ export default {
     localStorage: {
       prefix: 'sas_judo_auth.'
     }
+  },
+  recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    language: 'FR',   // Recaptcha language (v2)
+    siteKey: process.env.CAPTCHA_KEY,    // Site key for requests
+    version: 3,     // Version
+    size: 'normal'        // Size: 'compact', 'normal', 'invisible' (v2)
   },
   /*
    ** Build configuration
