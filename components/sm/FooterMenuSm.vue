@@ -5,7 +5,8 @@
         v-for="link in internalLinks"
         :key="link.name"
         @click="goTo(link.route)"
-        flat
+        text
+        icon
         rounded
         dark
       >
