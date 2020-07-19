@@ -5,6 +5,9 @@
         v-for="link in internalLinks"
         :key="link.name"
         @click="goTo(link.route)"
+        flat
+        rounded
+        dark
       >
         <span>{{ link.name }}</span>
         <v-icon>{{ link.icon }} </v-icon>
