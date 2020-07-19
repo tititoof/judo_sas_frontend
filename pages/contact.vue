@@ -5,6 +5,9 @@
         <h3>Contact</h3>
       </v-toolbar>
       <v-card-text style="height: 600px;" class="grey lighten-5">
+        <v-alert type="success" v-if="success">
+          Email envoyé
+        </v-alert>
         <v-row>
           <v-text-field
             v-model="name"
@@ -58,14 +61,28 @@ export default class Contact extends Vue {
   subject: string = ''
   message: string = ''
   $recaptcha: any
+  success: boolean = false
 
   async onSubmit() {
-    try {
-      const token = await this.$recaptcha.execute('send')
-      console.log('ReCaptcha token:', token)
-    } catch (error) {
-      console.log('Login error:', error)
-    }
+    // try {
+      // const token = await this.$recaptcha.execute('send')
+
+      // console.log('ReCaptcha token:', token)
+    // } catch (error) {
+      // console.log('Login error:', error)
+    // }
+    this.success = false
+    const post = await this.$axios.$post(`/api/email`, { 
+      contact: {
+        name: this.name,
+        email: this.email,
+        subject: this.subject,
+        message: this.message
+      }
+    }).then(() => {
+      this.success = true
+    })
+
   }
 
   async send() {
@@ -75,6 +92,10 @@ export default class Contact extends Vue {
       subject: this.subject,
       message: this.message
     })
+  }
+
+  async mounted() {
+    // await this.$recaptcha.init()
   }
 }
 </script>

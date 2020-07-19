@@ -21,6 +21,7 @@
           v-model="password"
           :rules="emptyRules"
           label="Password"
+          type="password"
           required
         ></v-text-field>
       </v-col>

@@ -1,6 +1,6 @@
 <template>
   <v-footer :fixed="true" :padless="true" style="z-index: 1000">
-    <v-bottom-navigation :value="activeBtn" color="teal" shift>
+    <v-bottom-navigation :value="activeBtn" color="teal">
       <v-btn
         v-for="link in internalLinks"
         :key="link.name"
