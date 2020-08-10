@@ -24,7 +24,7 @@
     "nuxt": "^2.0.0",
     "nuxt-leaflet": "^0.0.21",
     "nuxt-mq": "^2.0.1",
-    "tiptap-vuetify": "^2.23.0",
+    "tiptap-vuetify": "^2.24.0",
     "vue-recaptcha-v3": "^1.9.0",
     "vue2-leaflet": "^2.5.2"
   },

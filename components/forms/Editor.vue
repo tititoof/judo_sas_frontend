@@ -13,9 +13,9 @@
     </template>
   </ClientOnly>
 </template>
-
 <script lang="ts">
-import { Vue, Component, PropSync } from 'vue-property-decorator'
+// import { Vue, Component, PropSync } from 'vue-property-decorator'
+import { Vue, Component, PropSync } from 'nuxt-property-decorator'
 // import the component and the necessary extensions
 import {
   TiptapVuetify,
@@ -34,9 +34,7 @@ import {
   Blockquote,
   HardBreak,
   HorizontalRule,
-  TodoList,
-  TodoItem,
-  History
+  History,
 } from 'tiptap-vuetify'
 
 @Component({
@@ -73,8 +71,6 @@ export default class Editor extends Vue {
     Code,
     HorizontalRule,
     Paragraph,
-    TodoList,
-    TodoItem,
     HardBreak
   ]
 
