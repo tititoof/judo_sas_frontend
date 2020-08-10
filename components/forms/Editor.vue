@@ -34,6 +34,8 @@ import {
   Blockquote,
   HardBreak,
   HorizontalRule,
+  TodoList,
+  TodoItem,
   History
 } from 'tiptap-vuetify'
 
@@ -71,6 +73,8 @@ export default class Editor extends Vue {
     Code,
     HorizontalRule,
     Paragraph,
+    TodoList,
+    TodoItem,
     HardBreak
   ]
 

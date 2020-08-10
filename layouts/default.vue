@@ -6,7 +6,7 @@
       app
       color="#4caf50"
       shrink-on-scroll
-      src="/test_app_bar.jpg"
+      src="/header_bar.jpg"
     >
       <v-btn icon>
         <img alt="SAS Judo" src="/logo_sas_judo.png" height="50" />
